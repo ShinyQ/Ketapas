@@ -5,6 +5,10 @@ select:focus {
     outline: none !important;
 }
 
+#mapDesa {
+    height: 100%;
+}
+
 ::-webkit-scrollbar {
     width: 7px;
     height: 7px;
@@ -48,6 +52,53 @@ a:hover {
     background: #fafafa;
 }
 
+#demo {
+    height:100%;
+    position:relative;
+    overflow:hidden;
+}
+
+.green{
+    background-color:#6fb936;
+}
+.thumb{
+    margin-bottom: 30px;
+}
+
+.page-top{
+    margin-top:85px;
+}
+
+
+.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+
+
+.transition {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.1);
+}
+.modal-header {
+
+    border-bottom: none;
+}
+.modal-title {
+    color:#000;
+}
+.modal-footer{
+    display:none;
+}
+
 /* Landing Style */
 .nav-home {
     background: #f8ba10;
@@ -75,6 +126,7 @@ a:hover {
     position: relative;
     margin-bottom: 64px;
 }
+
 .hero-overlay {
     width: 100%;
     position: absolute;
@@ -257,6 +309,7 @@ a:hover {
 .city {
     text-align: right;
 }
+
 .news-card {
     width: 100%;
     position: relative;
@@ -265,23 +318,22 @@ a:hover {
     border-radius: 8px;
     height: 200px;
 }
+
 .news-content {
     position: absolute;
     width: 100%;
     border-radius: 4px;
     padding: 16px;
-    background: rgb(0, 0, 0);
     background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5) 0%,
-        rgba(0, 0, 0, 0) 100%
+            0deg,
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
     );
     bottom: 0;
 }
 
 .news-content h5 {
     color: white;
-    font-weight: bold;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -290,7 +342,9 @@ a:hover {
 .news-content p {
     color: white;
     font-weight: bold;
+    margin-bottom: 0;
 }
+
 .features {
     margin-top: 128px;
     text-align: center;
@@ -409,11 +463,10 @@ a:hover {
 
 .owl-carousel .item {
     background: linear-gradient(
-        45deg,
-        rgba(247, 151, 30, 0.7) 0%,
-        rgba(255, 210, 0, 0.75) 80%
-    );
-    background-repeat: no-repeat;
+            45deg,
+            rgba(247, 151, 30, 0.7) 0%,
+            rgba(255, 210, 0, 0.75) 90%
+    ) no-repeat;
     border: 1px solid #d9d7da;
     text-align: center;
 }

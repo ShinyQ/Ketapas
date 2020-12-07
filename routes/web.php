@@ -15,3 +15,4 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/',  [HomeController::class, 'index']);
+Route::get('/wisata/{id}',  [HomeController::class, 'wisata_detail']);
